@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        float media=0, soma=0;
+        int idade=0, pessoas=0;
+
+        while (idade>=0) {
+            Scanner tc = new Scanner(System.in);
+            System.out.println("Digite a idade: ");
+            idade = tc.nextInt();
+            
+            if (idade<0)
+                break;
+            pessoas++;
+            soma = soma + idade;
+
+
+    }
+        media = soma/pessoas;
+        System.out.println("A média das idades é: " + media );
+    }
+}

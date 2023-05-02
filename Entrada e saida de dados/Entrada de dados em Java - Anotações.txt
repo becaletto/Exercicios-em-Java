@@ -1,0 +1,12 @@
+Entrada de dados em Java
+
+import java.util.Scanner; //biblioteca para leitura de dados
+
+Scanner (tipo de variavel) sc (nome da variavel) = new Scanner(System.in)
+
+int x = sc.nextInt();
+double y = sc.nextDouble();
+char z = sc.next().charaAt(0); //lê a primeira string
+String s = sc.nextLine(); //lê até a quebra de linha 
+
+sc.close(); //limpa os dados

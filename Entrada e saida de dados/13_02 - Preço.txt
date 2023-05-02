@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        float preco, lucro;
+        int cont;
+
+        Scanner tc = new Scanner(System.in);
+
+        for (cont = 0; cont < 20; cont++) {
+            System.out.println("Digite o preço do produto: ");
+            preco = tc.nextFloat();
+            if (preco < 100) {
+                lucro = preco + 20;
+                System.out.println("o preço de venda é: " + lucro);
+            } else {
+                lucro = preco + 50;
+                System.out.println("o preço de venda é: " + lucro);
+            }
+
+
+        }
+    }
+}
